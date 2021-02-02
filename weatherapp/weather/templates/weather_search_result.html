@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+
+    <style type="text/css">
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            color: #588c7e;
+            font-family: monospace;
+            font-size: 15px;
+            text-align: left;
+                }
+        th {
+            background-color: #588c7e
+            color: white;
+            }
+        tr:nth-child(even) {background-color: #f2f2f2}
+
+    </style>
+
+    <table>
+
+        <div class="mw6 center pa3 sans-serif">
+
+            <div class="pl2">
+
+            <tr>
+
+                <th>Day</th>
+
+                <th>City</th>
+
+                <th>Description</th>
+
+                <th>Max Temp</th>
+
+                <th>Min Temp</th>
+
+                <th>Humidity</th>
+
+            </tr>
+
+            {% for data in search_data %}
+
+                <td>{{ data }}</td>
+
+            {% endfor %}
+
+            </div>
+
+        </div>
+
+    </table>
+
+{% endblock %}

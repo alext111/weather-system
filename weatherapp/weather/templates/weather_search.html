@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+
+<h1>City Weather Search</h1>
+
+<form method="post">
+  {% csrf_token %}
+  <label for="city">City:</label>
+  <input type="text" id="city" name="city_name"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p>Click the "Submit" button to view weather information for the entered city.</p>
+
+{% endblock %}

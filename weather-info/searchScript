@@ -1,0 +1,12 @@
+import requests
+
+#api key and city id for openweathermapapi
+api_key = '9d899b36cc540f63dae387657f3b1c1a'
+
+def getWeather(city_name):
+    # obtains api data in json format
+    weatherData = requests.get('http://api.openweathermap.org/data/2.5/weather?q=' + city_name + '&appid=' + api_key)
+    weatherData = weatherData.json()
+    print(weatherData)
+
+getWeather('Springfield')

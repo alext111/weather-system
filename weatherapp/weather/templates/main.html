@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+
+    <table>
+
+        <div class="mw6 center pa3 sans-serif">
+
+            <div class="pl2">
+
+            <tr>
+                <th>
+                    <a href="{% url 'weather_data' %}">View Weather Tables</a>
+                </th>
+
+                <th>
+                    <a href="{% url 'weather_search' %}">Search City Weather</a>
+                </th>
+            </tr>
+
+            </div>
+
+        </div>
+
+    </table>
+{% endblock %}
