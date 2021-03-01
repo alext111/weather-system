@@ -8,9 +8,13 @@
   {% csrf_token %}
   <label for="city">City:</label>
   <input type="text" id="city" name="city_name"><br><br>
-  <input type="submit" value="Submit">
+  <label for="state">State Code:</label>
+  <input type="text" id="state" name="state_code"><br><br>
+  <label for="country">Country Code:</label>
+  <input type="text" id="country" name="country_code"><br><br>
+  <input type="submit" value="Submit"><br><br>
 </form>
 
-<p>Click the "Submit" button to view weather information for the entered city.</p>
+<p>Click the "Submit" button to view weather information for the entered city information. The city name is required. Use country code from ISO-3166</p>
 
 {% endblock %}
