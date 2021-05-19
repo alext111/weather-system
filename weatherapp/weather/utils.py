@@ -2,7 +2,7 @@ import requests
 from datetime import date
 
 #api key and city id for openweathermapapi
-api_key = '9d899b36cc540f63dae387657f3b1c1a'
+api_key = ''
 
 def getWeather(city_name,state_code,country_code):
     # obtains api data in json format

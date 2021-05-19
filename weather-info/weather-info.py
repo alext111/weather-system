@@ -8,7 +8,7 @@ import schedule
 import time
 
 #api key and city id for openweathermapapi
-api_key = '9d899b36cc540f63dae387657f3b1c1a'
+api_key = ''
 city_id = '4787117'
 
 #function to get weather info from api
